@@ -1,8 +1,8 @@
 package coop.rchain.crypto.encryption
 
-import org.abstractj.kalium.crypto._
-import org.abstractj.kalium.keys._
-import org.abstractj.kalium.NaCl.Sodium.{CRYPTO_BOX_CURVE25519XSALSA20POLY1305_NONCEBYTES}
+import org.libsodium.jni.crypto._
+import org.libsodium.jni.keys._
+//import org.libsodium.jni.Sodium.{CRYPTO_BOX_CURVE25519XSALSA20POLY1305_NONCEBYTES}
 
 /**
 Curve25519 elliptic curve cryptography
@@ -38,8 +38,8 @@ object Curve25519 {
   }
 
   def newNonce: Array[Byte] = {
-    import org.abstractj.kalium.NaCl.Sodium._
-    val nonce = new Array[Byte](CRYPTO_BOX_CURVE25519XSALSA20POLY1305_NONCEBYTES)
+    import org.libsodium.jni.Sodium._
+    val nonce = new Array[Byte](crypto_box_curve25519xsalsa20poly1305_noncebytes())
     scala.util.Random.nextBytes(nonce)
     nonce
   }

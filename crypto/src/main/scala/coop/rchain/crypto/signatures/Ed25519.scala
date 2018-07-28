@@ -1,6 +1,6 @@
 package coop.rchain.crypto.signatures
 
-import org.abstractj.kalium.keys._
+import org.libsodium.jni.keys._
 
 object Ed25519 {
 

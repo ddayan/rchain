@@ -85,7 +85,7 @@ lazy val crypto = (project in file("crypto"))
       guava,
       bouncyCastle,
       scalacheckNoTest,
-      kalium,
+      libsodiumJni,
       jaxb,
       secp256k1Java,
       scodecBits),

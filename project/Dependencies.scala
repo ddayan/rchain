@@ -27,7 +27,7 @@ object Dependencies {
   val http4sDSL           = "org.http4s"                 %% "http4s-dsl"                % http4sVersion
   val jaxb                = "javax.xml.bind"              % "jaxb-api"                  % "2.1"
   val jline               = ("org.scala-lang"             % "jline"                      % "2.10.7").exclude("org.fusesource.jansi", "jansi")
-  val kalium              = "org.abstractj.kalium"        % "kalium"                    % "0.7.0"
+  val libsodiumJni              = "com.github.joshjdevl.libsodiumjni"        % "libsodium-jni"                    % "2.0.1"
   val kamonCore           = "io.kamon"                   %% "kamon-core"                % kamonVersion
   val kamonPrometheus     = "io.kamon"                   %% "kamon-prometheus"          % kamonVersion
   val lmdbjava            = "org.lmdbjava"                % "lmdbjava"                  % "0.6.1"
